@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/GokulnathP/git-co-commit/issues"
   },
-  "homepage": "https://github.com/GokulnathP/git-co-commit#readme"
+  "homepage": "https://github.com/GokulnathP/git-co-commit#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
