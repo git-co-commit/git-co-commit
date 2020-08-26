@@ -1,31 +1,35 @@
 {
-  "name": "git-co-commit",
-  "version": "1.0.2",
-  "description": "Git pairing with multiple co-authors in a simple way.",
-  "main": "commit.js",
-  "bin": {
-    "commit": "commit.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GokulnathP/git-co-commit.git"
-  },
-  "keywords": [
-    "gitpairing",
-    "git",
-    "co-commit",
-    "co-authors"
-  ],
-  "author": "GokulnathP",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/GokulnathP/git-co-commit/issues"
-  },
-  "homepage": "https://github.com/GokulnathP/git-co-commit#readme",
-  "dependencies": {
-    "prompt-sync": "^4.2.0"
-  }
+	"name": "git-co-commit",
+	"version": "1.0.2",
+	"description": "Git pairing with multiple co-authors in a simple way.",
+	"main": "commit.js",
+	"bin": {
+		"commit": "commit.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GokulnathP/git-co-commit.git"
+	},
+	"keywords": [
+		"gitpairing",
+		"git pair",
+		"git mob",
+		"pair programming",
+		"npm git",
+		"git",
+		"co-commit",
+		"co-authors"
+	],
+	"author": "GokulnathP",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/GokulnathP/git-co-commit/issues"
+	},
+	"homepage": "https://github.com/GokulnathP/git-co-commit#readme",
+	"dependencies": {
+		"prompt-sync": "^4.2.0"
+	}
 }
