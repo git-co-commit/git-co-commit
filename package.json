@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Git pairing with multiple co-authors in a simple way.",
   "main": "commit.js",
-  "bin": [
+  "bin": {
 	"commit": "commit.js"
-  ],
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,9 +20,12 @@
     "co-authors"
   ],
   "author": "GokulnathP",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GokulnathP/git-co-commit/issues"
   },
-  "homepage": "https://github.com/GokulnathP/git-co-commit#readme"
+  "homepage": "https://github.com/GokulnathP/git-co-commit#readme",
+  "publishConfig": { 
+	  "registry": "https://npm.pkg.github.com/" 
+  }
 }

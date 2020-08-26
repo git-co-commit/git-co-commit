@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Package to run terminal commands and Getting inputs
 const { exec } = require('child_process');
 const prompt = require('prompt-sync')({sigint: true});
