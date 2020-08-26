@@ -1,10 +1,10 @@
 {
   "name": "git-co-commit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Git pairing with multiple co-authors in a simple way.",
   "main": "commit.js",
   "bin": {
-	"commit": "commit.js"
+    "commit": "commit.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,7 +25,7 @@
     "url": "https://github.com/GokulnathP/git-co-commit/issues"
   },
   "homepage": "https://github.com/GokulnathP/git-co-commit#readme",
-  "publishConfig": { 
-	  "registry": "https://npm.pkg.github.com/" 
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
