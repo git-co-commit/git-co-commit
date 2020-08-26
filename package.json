@@ -24,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/GokulnathP/git-co-commit/issues"
   },
-  "homepage": "https://github.com/GokulnathP/git-co-commit#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "homepage": "https://github.com/GokulnathP/git-co-commit#readme"
 }
