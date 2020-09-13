@@ -11,10 +11,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/GokulnathP/git-co-commit.git"
+		"url": "git+https://github.com/git-co-commit/git-co-commit.git"
 	},
 	"keywords": [
-		"gitpairing",
 		"git pair",
 		"git mob",
 		"pair programming",
@@ -28,7 +27,7 @@
 	"bugs": {
 		"url": "https://github.com/GokulnathP/git-co-commit/issues"
 	},
-	"homepage": "https://github.com/GokulnathP/git-co-commit#readme",
+	"homepage": "https://git-co-commit.github.io/",
 	"dependencies": {
 		"prompt-sync": "^4.2.0"
 	}
