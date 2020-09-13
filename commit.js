@@ -23,32 +23,39 @@ inputPairs.split(",").forEach(pair => {
 	}
 });
 
-// Command to be executed
+// Building basic command to be executed
 let command = `git commit -m \"${message}\"`;
+
+// If pair is present add the first name
 if (pairs.length > 0) {
 	command += ` -m \"Co-authored-by: ${pairs[0]} <${pairs[0].toLowerCase()}@users.noreply.github.com>`;
 }
 
 // Running command based on OS
 if (os.type() === 'Windows_NT') {
+	// If more than one user it will add them to command (`n work as new line in powershell)
 	if (pairs.length > 1) {
 		for (var i = 1; i < pairs.length; i++) {
 			command += `\`nCo-authored-by: ${pairs[i]} <${pairs[i].toLowerCase()}@users.noreply.github.com>`;
 		}
 	}
+	// Close " of the command when pair is present
 	if (pairs.length > 0) {
 		command += "\"";
 	}
+	// Execute command on powershell
 	exec(command, { 'shell': 'powershell.exe' }, log);
 } else {
+	// If more than one user it will add them to command (\n work as new line in powershell)
 	if (pairs.length > 1) {
 		for (var i = 1; i < pairs.length; i++) {
 			command += `\nCo-authored-by: ${pairs[i]} <${pairs[i].toLowerCase()}@users.noreply.github.com>`;
 		}
 	}
+	// Close " of the command when pair is present
 	if (pairs.length > 0) {
 		command += "\"";
 	}
+	// Execute command on bash
 	exec(command, log);
 }
-
