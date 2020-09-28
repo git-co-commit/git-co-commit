@@ -1,4 +1,4 @@
-# [Git co commit](https://git-co-commit.github.io/) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/git-co-commit/git-co-commit/blob/master/LICENSE) [![npm](http://img.shields.io/badge/npm-v1.0.6-brightgreen)](https://www.npmjs.com/package/git-co-commit) [![Known Vulnerabilities](https://snyk.io/test/github/git-co-commit/git-co-commit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/git-co-commit/git-co-commit?targetFile=package.json)
+# [Git co commit](https://git-co-commit.github.io/) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/git-co-commit/git-co-commit/blob/master/LICENSE) [![npm](http://img.shields.io/badge/npm-v1.0.8-brightgreen)](https://www.npmjs.com/package/git-co-commit) [![Known Vulnerabilities](https://snyk.io/test/github/git-co-commit/git-co-commit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/git-co-commit/git-co-commit?targetFile=package.json)
 
 ## [Documentation ![Get started](http://img.shields.io/badge/Get%20started-Docs-green)](https://git-co-commit.github.io/#/get-started)
 
