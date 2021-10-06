@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 
 // Package to run terminal commands and Getting inputs
-const { exec } = require('child_process');
+const { spawn } = require('child_process');
 const prompt = require('prompt-sync')({ sigint: true });
 
 // Package for checking os
 let os = require('os');
-
-// Function for printing output of commands
-let log = (err, stdout, stderr) => console.log(stdout);
 
 // Getting commit message
 let message = prompt('Your Commit message: ');
@@ -35,7 +32,7 @@ if (pairs.length > 0) {
 if (os.type() === 'Windows_NT') {
 	// If more than one user it will add them to command (`n work as new line in powershell)
 	if (pairs.length > 1) {
-		for (var i = 1; i < pairs.length; i++) {
+		for (let i = 1; i < pairs.length; i++) {
 			command += `\`nCo-authored-by: ${pairs[i]} <${pairs[i].toLowerCase()}@users.noreply.github.com>`;
 		}
 	}
@@ -44,11 +41,11 @@ if (os.type() === 'Windows_NT') {
 		command += "\"";
 	}
 	// Execute command on powershell
-	exec(command, { 'shell': 'powershell.exe' }, log);
+	spawn(command, [], { stdio: 'inherit', 'shell': 'powershell.exe' });
 } else {
 	// If more than one user it will add them to command (\n work as new line in powershell)
 	if (pairs.length > 1) {
-		for (var i = 1; i < pairs.length; i++) {
+		for (let i = 1; i < pairs.length; i++) {
 			command += `\nCo-authored-by: ${pairs[i]} <${pairs[i].toLowerCase()}@users.noreply.github.com>`;
 		}
 	}
@@ -57,5 +54,5 @@ if (os.type() === 'Windows_NT') {
 		command += "\"";
 	}
 	// Execute command on bash
-	exec(command, log);
+	spawn(command, { stdio: 'inherit', shell: true });
 }

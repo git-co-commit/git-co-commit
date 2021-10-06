@@ -1,6 +1,6 @@
 {
 	"name": "git-co-commit",
-	"version": "1.0.8",
+	"version": "1.1.0",
 	"description": "Git pairing with multiple co-authors in a simple way.",
 	"main": "commit.js",
 	"bin": {
